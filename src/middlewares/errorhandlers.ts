@@ -15,6 +15,6 @@ export function genericErrorHandler(
   res: Response,
 ) {
   const error = buildError(err);
-
-  res.status(error.code).json({ error });
+  console.log("this is error",error)
+  // res.status(error.code).json({ error });
 }
